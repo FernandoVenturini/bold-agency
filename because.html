@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Meu Projeto Final!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="main">
+        <div class="center">
+            <div class="menu">
+                <div class="logo-menu">
+                    <a href="/"><img src="images/logoagencia.svg" /></a>
+                </div><!--logo-menu-->
+
+                <div class="items-menu">
+                    <a href="index.html">Home</a>
+                    <a href="because.html">Because we?</a>
+                    <a href="depositions.html">Depositions</a>
+                    <a class="contact-btn" href="getintouch.html">Get in touch</a>
+                </div><!--items-menu-->
+            </div><!--menu-->
+                
+            <div class="mockup">
+                <h1>Promote experiences to your customers</h1>
+                <br />
+                <p>And see impressive results day after day</p>
+                <br />
+                <img src="images/foto-principal.jpg" />
+            </div><!--mockup-->
+            
+        </div><!--center-->
+    </section><!--main-->
+
+    <!--MARCAS-->
+    <section class="marcas">
+        <div class="center">
+            <img src="images/LOGO1.png" />
+            <img src="images/LOGO2.png" />
+            <img src="images/LOGO3.png" />
+            <img src="images/LOGO4.png" />
+            <img src="images/LOGO5.png" />
+        </div><!--center-->
+    </section><!--marcas-->
+
+
+    <section class="porque-nos">
+        <div class="center">
+            <h2>Because we??</h2>
+            <p>An incredible experience for your customers, spectacular results for your company.</p>
+
+            <div class="diferenciais">
+                <div class="box-diferenciais">
+                    <img src="images/ICONE1.png" />
+                    <h3>Impeccable planning</h3>
+                    <p>Count on Agência Bold as your partner in planning your projects, content, campaigns, strategies. Our highly qualified professionals are prepared for any challenge.</p>
+                </div>
+                <div class="box-diferenciais">
+                    <img src="images/ICONE2.png" />
+                    <h3>Pay for results</h3>
+                    <p>Here you pay according to the return you earn on each campaign. Don't leave the opportunity to have better results for tomorrow. Get in touch and let's talk about your need.</p>
+                </div>
+                <div class="box-diferenciais">
+                    <img src="images/ICONE3.png" />
+                    <h3>Support and follow-up</h3>
+                    <p>Even after we finish our project or strategy, we at Agência Bold will follow up on future developments and results, offering all possible support for you and your team.</p>
+                </div>
+            </div>
+            <!--diferenciais-->
+        </div><!--center-->
+    </section><!--porquenos-->
+
+
+    <footer>
+        <p>&lt;LVF_Code&gt; 2022 - &COPY; All rights reserved</p>
+    </footer>
+
+    <script src="jquery.js"></script>
+    <script src="slick.min.js"></script>
+    <script>
+        $('.container-slider').slick({
+            dots: true,
+            arrows: false,
+            speed: 1000,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }],
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <title>Meu Projeto Final!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="main">
+        <div class="center">
+            <div class="menu">
+                <div class="logo-menu">
+                    <a href="/"><img src="images/logoagencia.svg" /></a>
+                </div>
+                <!--logo-menu-->
+
+                <div class="items-menu">
+                    <a href="index.html">Home</a>
+                    <a href="because.html">Because we?</a>
+                    <a href="depositions.html">Depositions</a>
+                    <a class="contact-btn" href="getintouch.html">Get in touch</a>
+                </div>
+                <!--items-menu-->
+            </div>
+            <!--menu-->
+
+            <div class="mockup">
+                <h1>Promote experiences to your customers</h1>
+                <br />
+                <p>And see impressive results day after day</p>
+                <br />
+                <img src="images/foto-principal.jpg" />
+            </div>
+            <!--mockup-->
+        </div>
+        <!--center-->
+    </section>
+    <!--main-->
+
+    <!--MARCAS-->
+    <section class="marcas">
+        <div class="center">
+            <img src="images/LOGO1.png" />
+            <img src="images/LOGO2.png" />
+            <img src="images/LOGO3.png" />
+            <img src="images/LOGO4.png" />
+            <img src="images/LOGO5.png" />
+        </div>
+        <!--center-->
+    </section>
+    <!--marcas-->
+
+    <!--FORMULARIO-->
+    <span class="form">Form</span>
+    <section class="form">
+        <form method="post" id="fContato" action="mailto:fernandoventurini9@hotmail.com" oninput="calc_total();">
+            <fieldset id="usuario">
+                <legend>User ID</legend>
+                <p>
+                    <label for="cName">Name</label>
+                    <input type="text" name="tName" id="cName" size="20" maxlength="30" placeholder="Type your name...">
+                </p>
+
+                <p>
+                    <label for="cPassword">Password</label>
+                    <input type="password" name="tPassword" id="cPasword" size="8" maxlength="8" placeholder="8 digits...">
+                </p>
+
+                <p>
+                    <label for="cEmail">Email</label>
+                    <input type="email" name="tMail" id="iMail" size="20" maxlength="40" placeholder="Type your e-mail...">
+                </p>
+
+                <fieldset id="sex">
+                    <legend>Sex</legend>
+                    <input type="radio" name="tSex" id="cMasc" checked>
+                    <label for="cMasc">Masculine</label>
+                    <br>
+                    <input type="radio" name="tSex" id="cFem">
+                    <label for="cFem">Feminine</label>
+                </fieldset>
+
+                <p>Birth Date
+                    <input type="date" name="tNac" id="cNac">
+                </p>
+            </fieldset>
+            <fieldset id="address">
+                <legend>User Address</legend>
+                <p>
+                    <label for="cLogra">
+                        "Public place"
+                        <input type="text" name="tRoad" id="cRoad" size="13" maxlength="80" placeholder="Road, Street...">
+                    </label>
+                </p>
+
+                <p>
+                    <label for="cNum">
+                        "Number"
+                        <input type="number" name="tNum" id="cNum" size="13" min="0" maxlength="99999"
+                            placeholder="Number...">
+                    </label>
+                </p>
+
+                <p>
+                    <label for="cEst">Count</label>
+                    <select name="tEst" id="cEst">
+                        <optgroup label="North West">
+                            <option value="">Northumberland</option>
+                            <option value="">Tyne and Wear</option>
+                            <option value="">Durham</option>
+                        </optgroup>
+                        <optgroup label="South">
+                            <option value="">West Sussex</option>
+                            <option value="">Hampshire</option>
+                            <option value="">Dorset</option>
+                        </optgroup>
+                        <optgroup label="East">
+                            <option value="">Norfolk</option>
+                            <option value="">Essex</option>
+                            <option value="">Suffok</option>
+                        </optgroup>
+                        <optgroup label="West">
+                            <option value="">Shropshire</option>
+                            <option value="">Herefordshire</option>
+                            <option value="">Cheshire</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="cRoad">Road</label>
+                    <input type="text" name="tRoad" id="cRoad" maxlength="40" size="20" placeholder="Town...">
+                </p>
+            </fieldset>
+
+            <fieldset id="message">
+                <legend>User Message...</legend>
+                <p>
+                    <label for="cUrg">Degree of urgency</label>
+                    "Min"
+                    <input type="range" name="tUrg" id="cUrg" max="10">
+                    "Max"
+                </p>
+
+                <p>
+                    <label for="cMsg">Message</label>
+                    <textarea name="tMsg" id="cMsg" cols="45" rows="5">Leave your message here...</textarea>
+                </p>
+            </fieldset>
+            <input id="send" type="submit" value="Send">
+        </form>
+    </section>
+
+    <section class="cta">
+        <h2>Let's Start Your Project</h2>
+        <h4>Talk to one of our consultants right now!</h4>
+        <a href="/contato">Get in touch</a>
+    </section>
+    <!--cta-->
+
+    <footer>
+        <p>&lt;LVF_Code&gt; 2022 - &COPY; All rights reserved</p>
+    </footer>
+
+    <script src="jquery.js"></script>
+    <script src="slick.min.js"></script>
+    <script>
+        $('.container-slider').slick({
+            dots: true,
+            arrows: false,
+            speed: 1000,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }],
+        });
+    </script>
+
+</body>
+
+</html>

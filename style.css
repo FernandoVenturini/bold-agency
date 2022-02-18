@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.center{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+section.main{
+    background-image: url('images/bg.svg');
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0;
+}
+
+/***MENU***/
+.menu{
+    display: flex; 
+    width: 100%;
+}
+
+.logo-menu{
+    width: 50%;
+}
+
+.items-menu{
+    width: 50%;
+    text-align: right;
+}
+
+.items-menu a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.items-menu a:hover{
+    border-bottom: 2px solid #FFDD33;
+}
+
+.items-menu a.contact-btn{
+    background-color: #0F3FD3;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.items-menu a.contact-btn:hover{
+    border-bottom: 0;
+}
+
+/***MOCKUP***/
+.mockup{
+    display: block; 
+    width: 100%; 
+    color: white; 
+    text-align: center; 
+    padding-top: 100px;
+}
+
+.mockup h1{
+    font-size: 50px;
+}
+
+.mockup img{
+    max-width: 70%;
+    border-radius: 5px;
+}
+
+/***LOGOMARCAS***/
+section.marcas{
+    padding: 100px 0;
+}
+
+section.marcas img{
+    width: calc(100% / 5);
+}
+
+section.porque-nos{
+    padding: 40px 0;
+    background-color: #FBFCFE;
+}
+
+section.porque-nos > .center > h2{
+    font-size: 64px;
+    text-align: center;
+    width: 100%;
+}
+
+section.porque-nos > .center{
+    max-width: 1280px;
+}
+
+section.porque-nos > .center > p{
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+    width: 100%;
+}
+
+.diferenciais{
+    display: flex;
+    margin-top: 50px;
+}
+
+.box-diferenciais{
+    box-shadow: 0px 20px 40px #2426721C;
+    width: 31%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.box-diferenciais h3{
+    font-size: 28px;
+    margin: 20px 0;
+    color: black;
+}
+
+.box-diferenciais p{
+    font-size: 13px;
+    color: #7E92AC;
+    margin-bottom: 20px;
+    text-indent: 10%;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/*CTA*/
+section.cta{
+    background-image: url('images/banner_meio.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 10px;
+    min-height: 300px;
+    text-align: center;
+    color: white;
+}
+section.cta h2,
+section.cta h4{
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+section.cta h2{
+    font-size: 40px;
+}
+
+section.cta a{
+    display: inline-block;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 17px;
+    background: #FFDD33;
+    text-decoration: none;
+    color: #0F3FD3;
+    border-radius: 7px;
+}
+
+/*CTA-2*/
+section.beneficios h2{
+    font-size: 64px;
+    text-align: left;
+    color: black;
+}
+
+/*FORM*/
+span.form{
+    display: block;
+    font-size: 25pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    background: #0F3FD3;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+    color: #FFDD33;
+    border-radius: 10px;
+}
+section.form{
+    background-color: #8888882f;
+    width: 1200px;
+    margin: 30px auto;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+form{
+    display: block;
+    width: 1100px;
+}
+
+form#fContato input{
+   padding: 2px;
+   background-color: rgba(204, 204, 204, 0.281);
+   border-radius: 5px;
+   border: 1px solid #ccc;
+}
+
+form#fContato input#send{
+    margin: auto;
+    color: #0F3FD3;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 16pt;
+    background-color: #FFDD33;
+    cursor: pointer;
+}
+
+form#fContato input#send:hover{
+    box-shadow: 2px 2px 2px 2px #0f40d359;
+}
+
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-image: initial;
+}
+
+fieldset#usuario, fieldset#address, fieldset#message, fieldset#sex{
+    color: #888888;
+    font-size: 13pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    margin-left: 55px;
+}
+
+fieldset#message > p > textarea{
+    border-radius: 5px;
+}
+
+legend{
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+p{
+    text-indent: 50px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+label {
+    cursor: default;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*BENEFICIOS*/
+section.beneficios{
+    padding: 50px 0;
+}
+
+.lista-beneficios{
+    width: 50%;
+    margin-top: 30px;
+    /*text-align: center;*/
+}
+
+.lista-beneficios h1{
+    color: black;
+    font-size: 40px;
+}
+
+.lista-beneficios p{
+    color: #7E92AC;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.lista-beneficios span{
+    display: inline-block;
+    width: calc(100% - 50%);
+}
+
+.lista-beneficios img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.img-beneficios{
+    width: 40%;
+}
+
+.img-beneficios img{
+    max-width: 100%;
+}
+
+section.beneficios a{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #0F3FD3;
+    text-decoration: none;
+    color: #FFDD33;
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    width: 40%;
+}
+
+/*DEPOIMENTOS*/
+section.depoimentos{
+    background-color: rgba(128, 128, 128, 0.164);
+    padding: 40px 0;
+}
+
+section.depoimentos > h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.container-slider{
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.container-slider-single{
+    float: left;
+    background-color: #fbfcfe38;
+    border-radius: 10px;
+    padding: 15px; 
+    text-align: center;
+    width: 100%;
+    height: 30%;
+}
+
+.container-slider-single img{
+    margin-bottom: auto;
+}
+
+.container-slider-single p{
+    margin: 15px 0;
+    color: #7E92AC;
+    font-size: 14px;
+}
+
+.slick-slide{
+    margin-left: 27px;
+}
+
+.slick-list{
+    margin-left: -27px;
+}
+
+/*SLICK SLIDER*/
+.slick-dotted ul{
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.slick-dotted li{
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotetd li button:focus{
+    outline: 0;
+}
+
+.slick-dotted li button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.slick-active button{
+    background: #373855;
+    color: #373855;
+}
+
+.slick-slide:focus{outline: none;}
+
+/***FOOTER***/
+footer{
+    background-color: #FFDD33;
+    height: 100px;
+}
+
+footer p{
+    font-size: 12pt;
+    color: #0F3FD3;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/***RESPONSIVE***/
+@media screen and (max-width: 768px){
+    .lista-beneficios,.img-beneficios{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .diferenciais{
+        flex-wrap: wrap;
+    }
+    .box-diferenciais{
+        width: 100%;
+        margin-right: 0;
+    }
+    section.marcas > .center{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    section.marcas img{
+        max-width: 250px;
+        width: 100%;
+    }
+}
